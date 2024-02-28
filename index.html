@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+    <main class="w-11/12 mx-auto">
+        <section class="bg-slate-900 p-4 m-4 border-2 border-transparent rounded-2xl">
+            <input type="text" placeholder="Search..." class="input w-full max-w-xs" id="input-field" />
+            <button class="btn btn-accent" id="search-btn">Search</button>
+        </section>
+        <section>
+            <div class="text-center mt-40" id="loading-spinner">
+                <span class="loading loading-spinner loading-lg"></span>
+            </div>
+            <div id="phones-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 w-full">
+
+            </div>
+            <div>
+                <button class="btn btn-active btn-secondary hidden" id="show-all-btn">Show All</button>
+            </div>
+        </section>
+        <!-- Open the modal using ID.showModal() method -->
+        <section>
+            <!-- <button class="btn" onclick="">open modal</button> -->
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box" id="modal-box">
+                    <!-- <h3 class="font-bold text-lg">Hello!</h3>
+                    <p class="py-4">Press ESC key or click the button below to close</p>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            
+                            <button class="btn">Close</button>
+                        </form>
+                    </div> -->
+                </div>
+            </dialog>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="js/phone.js"></script>
+</body>
+
+</html>
